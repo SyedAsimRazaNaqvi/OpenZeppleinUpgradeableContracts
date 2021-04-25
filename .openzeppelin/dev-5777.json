@@ -1,0 +1,98 @@
+{
+  "contracts": {
+    "SimpleStorage": {
+      "address": "0x5999d0403523C16bFd206e22fCAf9802C382b4Df",
+      "constructorCode": "608060405234801561001057600080fd5b506102cf806100206000396000f3fe",
+      "bodyBytecodeHash": "7e2bce05e62451027d5201789a8e5acf1f7eef3f9d858e58468972d6b1fff4c5",
+      "localBytecodeHash": "ac3dd3492bc823cb715b1a1ee3f42f9a300fa5c75a32810fb216a5d22dd6588f",
+      "deployedBytecodeHash": "ac3dd3492bc823cb715b1a1ee3f42f9a300fa5c75a32810fb216a5d22dd6588f",
+      "types": {
+        "t_bool": {
+          "id": "t_bool",
+          "kind": "elementary",
+          "label": "bool"
+        },
+        "t_uint256": {
+          "id": "t_uint256",
+          "kind": "elementary",
+          "label": "uint256"
+        },
+        "t_array:50<t_uint256>": {
+          "id": "t_array:50<t_uint256>",
+          "valueType": "t_uint256",
+          "length": "50",
+          "kind": "array",
+          "label": "uint256[50]"
+        }
+      },
+      "storage": [
+        {
+          "contract": "Initializable",
+          "path": "@openzeppelin\\contracts-ethereum-package\\contracts\\Initializable.sol",
+          "label": "initialized",
+          "astId": 5,
+          "type": "t_bool",
+          "src": "757:24:0"
+        },
+        {
+          "contract": "Initializable",
+          "path": "@openzeppelin\\contracts-ethereum-package\\contracts\\Initializable.sol",
+          "label": "initializing",
+          "astId": 8,
+          "type": "t_bool",
+          "src": "876:25:0"
+        },
+        {
+          "contract": "Initializable",
+          "path": "@openzeppelin\\contracts-ethereum-package\\contracts\\Initializable.sol",
+          "label": "______gap",
+          "astId": 73,
+          "type": "t_array:50<t_uint256>",
+          "src": "1982:29:0"
+        },
+        {
+          "contract": "SimpleStorage",
+          "path": "contracts\\SimpleStorage.sol",
+          "label": "storedValue",
+          "astId": 282,
+          "type": "t_uint256",
+          "src": "572:19:2"
+        },
+        {
+          "contract": "SimpleStorage",
+          "path": "contracts\\SimpleStorage.sol",
+          "label": "addedValue",
+          "astId": 284,
+          "type": "t_uint256",
+          "src": "598:18:2"
+        }
+      ],
+      "warnings": {
+        "hasConstructor": false,
+        "hasSelfDestruct": false,
+        "hasDelegateCall": false,
+        "hasInitialValuesInDeclarations": false,
+        "uninitializedBaseContracts": [],
+        "storageUncheckedVars": [],
+        "storageDiff": []
+      }
+    }
+  },
+  "solidityLibs": {},
+  "proxies": {
+    "hello/SimpleStorage": [
+      {
+        "address": "0x70b0593bAdA51eEc2e9D2A7BC61A64C7Ae688de6",
+        "version": "1.0.0",
+        "implementation": "0x5999d0403523C16bFd206e22fCAf9802C382b4Df",
+        "admin": "0xA5F92bc73AdAe7072F58526265E81A66B1770983",
+        "kind": "Upgradeable"
+      }
+    ]
+  },
+  "manifestVersion": "2.2",
+  "version": "1.0.0",
+  "proxyAdmin": {
+    "address": "0xA5F92bc73AdAe7072F58526265E81A66B1770983"
+  }
+}
